@@ -14,7 +14,6 @@ workflows:
           parallelism: 2 # Uses 2 parallel instances
           # Starts web server for E2E tests - replace with your own server invocation
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
-          start-command: npm start
           cypress-command: yarn cypress run --browser chrome --record --parallel
           install-browsers: true
           post-steps:
